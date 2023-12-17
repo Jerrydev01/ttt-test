@@ -28,6 +28,20 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Hide scrollbar only on mobile devices */
+@media (max-width: 767px) {
+  body {
+    scrollbar-width: none; /* For Firefox */
+  }
+
+  /* For Chrome, Safari, and newer Edge */
+  /* Note: This may not work in future browser updates */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
 /**
  * Render the `main` element consistently in IE.
  */
